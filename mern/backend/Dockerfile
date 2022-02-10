@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+RUN mkdir -p /app/logs && chown -R node:node /app/logs
+
 EXPOSE 80
 
 ENV MONGODB_USERNAME=root
