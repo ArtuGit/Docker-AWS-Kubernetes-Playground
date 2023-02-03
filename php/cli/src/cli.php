@@ -1,5 +1,3 @@
 <?php
-  # ToDo: Show echo          
-  echo "Welcome back!";
-  sleep(3)
+  printf("Welcome back into PHP, %s\r\n", "Artu !");
 ?> 
