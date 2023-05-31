@@ -1,3 +1,3 @@
-# Docker-AWS-Kubernetes Playground
+# Docker-Kubernetes Playground
 
-Playground for Docker, Docker Compose, Docker-related AWS services, and Kubernetes
+Playground for Docker, Docker Compose, Docker-related cloud services(AWS, Azure), and Kubernetes
