@@ -3,13 +3,14 @@ kind: Service
 metadata:
   name: backend
 spec:
-  selector: 
-    app: second-app
+  selector:
+    app: k8-first
   ports:
     - protocol: 'TCP'
       port: 80
       targetPort: 8080
-    # - protocol: 'TCP'
-    #   port: 443
-    #   targetPort: 443
   type: LoadBalancer
+
+# Commands:
+# kubectl apply -f service.yaml
+# minikube service backend
