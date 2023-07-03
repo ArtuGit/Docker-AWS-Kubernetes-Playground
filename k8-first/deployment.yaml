@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: second-app-deployment
-spec:
+  name: k8-first-deployment
+spec: # pods configuration
   replicas: 1
   selector:
     matchLabels:
-      app: second-app
+      app: k8-first
       tier: backend
-  template:
-    metadata: 
+  template: # pod template
+    metadata:
       labels:
-        app: second-app
+        app: k8-first
         tier: backend
-    spec: 
+    spec: # containers
       containers:
-        - name: second-node
-          image: academind/kub-first-app:2
-        # - name: ...
-        #   image: ...
+        - name: k8-first-node
+          image: itcross/k8-first:1.0
+
+#  kubectl apply -f deployment.yaml
