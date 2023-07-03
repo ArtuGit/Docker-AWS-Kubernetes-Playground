@@ -18,4 +18,5 @@ spec: # pods configuration
         - name: k8-first-node
           image: itcross/k8-first:1.0
 
-#  kubectl apply -f deployment.yaml
+# Commands:
+# kubectl apply -f deployment.yaml
