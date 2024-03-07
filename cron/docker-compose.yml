@@ -1,6 +1,26 @@
-version: '3'
+version: '3.8'
 
 services:
+  python:
+    container_name: python  
+    build:
+      context: python/
+    healthcheck:
+      test: ["CMD", "python", "-c", "print('Health check')"]  # Command to check health
+      interval: 10s  # Interval between checks
+      retries: 3  # Number of retries before considering unhealthy
+      timeout: 5s  # Timeout for each health check      
+
   cron:
-    build: .
-    restart: always
+    container_name: cron 
+    build:
+      context: cron/
+    depends_on:
+      python:
+        condition: service_healthy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock    
+    restart: always  
+
+
+

@@ -1,6 +1,0 @@
-* * * * * echo "Hello World!"
-* * * * * sleep 10; echo "Hello World!"
-* * * * * sleep 20; echo "Hello World!"
-* * * * * sleep 30; echo "Hello World!"
-* * * * * sleep 40; echo "Hello World!"
-* * * * * sleep 50; echo "Hello World!"

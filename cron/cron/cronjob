@@ -1,0 +1,16 @@
+* * * * * echo "Hello World!";
+* * * * * sleep 10; echo "Hello World!";
+* * * * * sleep 20; echo "Hello World!";
+* * * * * sleep 30; echo "Hello World!";
+* * * * * sleep 40; echo "Hello World!";
+* * * * * sleep 50; echo "Hello World!";
+
+
+* * * * * docker exec python /usr/local/bin/python -c 'import sys; print("Hello from Python!"); sys.stdout.flush()';
+* * * * * sleep 10; docker exec python /usr/local/bin/python -c 'import sys; print("Hello from Cron (printed by Python)!"); sys.stdout.flush()';
+* * * * * sleep 20; docker exec python /usr/local/bin/python -c 'import sys; print("Hello from Cron (printed by Python)!"); sys.stdout.flush()';
+* * * * * sleep 30; docker exec python /usr/local/bin/python -c 'import sys; print("Hello from Cron (printed by Python)!"); sys.stdout.flush()';
+* * * * * sleep 40; docker exec python /usr/local/bin/python -c 'import sys; print("Hello from Cron (printed by Python)!"); sys.stdout.flush()';
+* * * * * sleep 50; docker exec python /usr/local/bin/python -c 'import sys; print("Hello from Cron (printed by Python)!"); sys.stdout.flush()';
+
+

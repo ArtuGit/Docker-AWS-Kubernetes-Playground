@@ -1,9 +1,8 @@
 FROM alpine:latest
 
-# Install cron
 RUN apk --no-cache add busybox
+RUN apk add docker-cli
 
-# Add your cron job file
 ADD cronjob /etc/crontabs/root
 
 # Start cron when the container starts
